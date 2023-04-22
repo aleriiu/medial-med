@@ -68,19 +68,22 @@ a.btm-black:hover {
 
 /* header */
 
-header {}
+
+header,
+section {
+
+}
 
 .header-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: sticky; /*?*/
+    position: sticky;
+    /*?*/
     box-shadow: 0.063rem 0.063rem 0.438rem #00000060;
 }
 
-.header-logo {
-    
-}
+.header-logo {}
 
 .logo {
     width: 4.375rem;
@@ -130,92 +133,25 @@ header {}
     border-radius: 0.313rem;
 }
 
-/*
+/* greeting */
 
-
-.header-container {
-    margin: 0px auto;
-    height: 100px;
-    position: sticky;
-    top: 0px;
+.greeting {
     background: #F0F1F1;
-    z-index: 999;
-    box-shadow: 1px 1px 7px #00000060;
+    width: 100%;
 }
 
-.header-container .content {
+.greeting-container {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-    justify-content: space-between;
-}
-
-.section-navigation-logo {
-    background: url(images/Group_1521.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 70px;
-    height: 105px;
-    background-size: contain;
-}
-
-.section-navigation-link {
-    width: calc(100% / 3.2)
-}
-
-.section-navigation-link a:link,
-.section-navigation-link a:active,
-.section-navigation-link a:visited {
-    color: black;
-}
-
-.section-navigation-link a {
-    text-decoration: none;
-    font-weight: 600;
-    padding: 0px 20px;
-}
-
-.section-navigation-contact {
-    width: calc(100% / 7);
-    text-align: end;
-}
-
-.section-navigation-contact span {
-    font-size: 0.8em;
-    font-weight: 600;
-}
-
-.section-navigation-line {
-    width: 2px;
-    height: 40px;
-    background: #EAEBEB;
-}
-
-.section-navigation-contact a:link,
-.section-navigation-contact a:active,
-.section-navigation-contact a:visited {
-    color: #60afa4;
-}
-
-.section-navigation-contact a {
-    text-decoration: none;
-    font-weight: 600;
-}
-
-*/
-
-
-
-/**STYLE MAIN SECTION**/
-
-.section-main {
-    height: 100vh;
-    background: #F0F1F1;
+    width: 70%;
+    padding: 0 5.625rem;
     position: relative;
 }
 
-.section-main-line {
+.greeting-title {
+    
+}
+
+/* .greeting-line {
     background: url(images/Frame_1.svg);
     background-position: bottom;
     background-size: 70%;
@@ -223,9 +159,9 @@ header {}
     background-position-x: right;
     background-position-y: bottom;
     background-repeat: no-repeat;
-}
-
-.section-main-bg {
+} */
+/*
+.greeting-bg {
     background: url(images/female-hands-disposa.png);
     background-position: bottom;
     background-size: 50%;
@@ -233,40 +169,61 @@ header {}
     background-position-x: right;
     background-position-y: bottom;
     background-repeat: no-repeat;
-}
+}*/
 
-.section-main .content {
-    height: 100vh;
-}
-
-.section-main-content {
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto 0;
-    height: 550px;
-}
-
-.section-main-title {
-    font-size: 67px;
-    line-height: 0.95;
+.greeting-title__header {
+    font-size: 4.188rem;
+    line-height: 1;
     font-weight: 400;
-    margin: 0px;
+    padding-top: 5.625rem;
 }
 
-.section-desc-l,
-.section-desc-r {
+.greeting-title__item {
+    font-size: 0.938rem;
+    display: flex;
+    gap: 0.938rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.item-list {
+    color: #60afa4;
+    font-size: 0.938rem;
+    list-style: none;
+}
+
+.item-list::before {
+    content: "";
+    width: 0.875rem;
+    height: 0.875rem;
+    background: #60afa4;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 15%;
+    left: 9%;
+}
+
+.greeting-btn {
+    margin-bottom: 7rem;
+}
+
+.greeting-image {
+    position: absolute;
+    max-width: 100%;
+    left: 95%;
+    height: 100%;
+}
+
+/*
+.greeting-title__item{
     width: 50%;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 55px;
     font-size: 15px;
-}
+} */
 
+/*
 .section-desc-r::before,
 .section-desc-l::before {
     content: " ";
@@ -287,7 +244,7 @@ header {}
     width: 100%;
 }
 
-/**STYLE MAIN SECTION**/
+*/
 
 /**STYLE PRODUCTS**/
 
@@ -810,15 +767,15 @@ label {
     }
 
     .section-company-service-item {
-            background: #ffffff;
-            border-radius: 15px;
-            /* width: calc((100% / 3) - 20px); */
-            margin-bottom: 30px;
-            min-height: 270px;
-            border: 2px #eef2f5 solid;
-            padding: 30px;
-            position: relative;
-            z-index: 2;
+        background: #ffffff;
+        border-radius: 15px;
+        /* width: calc((100% / 3) - 20px); */
+        margin-bottom: 30px;
+        min-height: 270px;
+        border: 2px #eef2f5 solid;
+        padding: 30px;
+        position: relative;
+        z-index: 2;
     }
 }
 
