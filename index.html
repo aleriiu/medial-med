@@ -14,9 +14,6 @@
 <body>
     <header class="header">
         <div class="header-container">
-
-            <!--   <div class="content"> -->
-
             <div class="header-logo">
                 <img class="logo" src="./images/logo.svg" alt="">
             </div>
@@ -29,26 +26,6 @@
             <div class="menu-line"></div>
             <div class="menu-phone"><a class="phone" href="#">+7 (812) 988-99-09</a></div>
             <button class="menu-btn" type="seach">Запросить прайс-лист</button>
-            <!--
-            <div class="section-navigation-link">
-                <a href="#">Каталог</a>
-                <a href="#">О компании </a>
-                <a href="#">Контакты </a>
-            </div>
-            <div class="section-navigation-contact">
-                <span>ПН-ПТ: 9:00 - 18:00 </span>
-            </div>
-            <div class="section-navigation-line">
-
-            </div>
-            <div class="section-navigation-contact">
-                <a href="tel:78129889909" style="text-align: start;">+7 (812) 988-99-09</a>
-            </div>
-            <div class="section-navigation-btm">
-                <a href="#" class="btm-black">Запросить прайс-лист</a>
-            </div>-->
-
-
         </div>
     </header>
     <main>
@@ -63,23 +40,22 @@
                     </ul>
                     <button class="greeting-btn menu-btn" type="seach">Запросить прайс-лист</button>
                 </div>
-                <img class="greeting-image" src="./images/female-hands-disposa.png" alt="">
+                <div class="greeting-image__before">
+                    <img class="greeting-image" src="./images/female-hands-disposa.png" alt="">
+                </div>
             </div>
         </section>
 
-        <!--ПЕРЕЧЕНЬ ТОВАРОВ-->
-        <div class="section-price">
-            <div class="content">
-                <div class="section-price-1">
-                    <h2 class="section-price-header">
+        <section class="section goods">
+            <div class="goods-container">
+                <div class="goods-greetings">
+                    <h2 class="goods-greetings__header">
                         Популярные позиции
                     </h2>
-                    <div class="section-price-btm">
-                        <a href="#" class="btm-white">Запросить прайс-лист</a>
-                    </div>
+                    <button class="menu-btn" type="seach">Запросить прайс-лист</button>
                 </div>
-                <div class="section-price-item">
-                    <div class="price-item">
+                <div class="goods-cards">
+                    <div class="goods-cards__item">
                         <img src="images/Group_1564.webp">
                         <h3>Перчатки CRM Nitrile</h3>
                         <p>Диагностические, неопудренные, нестерильные перчатки из нитрила</p>
@@ -91,7 +67,7 @@
 
                     </div>
 
-                    <div class="price-item">
+                    <div class="goods-cards__item">
                         <img src="images/Group_1556.webp">
                         <h3>Перчатки CRM LATEX</h3>
                         <p>Диагностические, неопудренные, нестерильные перчатки из натурального латекса</p>
@@ -103,7 +79,7 @@
 
                     </div>
 
-                    <div class="price-item">
+                    <div class="goods-cards__item">
                         <img src="images/Group_1554.webp">
                         <h3>Перчатки Хирургические CRM</h3>
                         <p>Хирургические, неопудренные, стерильные перчатки из натурального латекса</p>
@@ -114,8 +90,9 @@
                         <a href="#" class="btm-black">Узнать стоимость</a>
 
                     </div>
-
-                    <div class="price-item">
+                </div>
+                <div class="goods-cards">
+                    <div class="goods-cards__item">
                         <img src="images/Group_1583.webp">
                         <h3>Перчатки Matrix HighRisk Latex</h3>
                         <p>Диагностические, неопудренные, нестерильные перчатки из латекса повышенной прочности.</p>
@@ -127,7 +104,7 @@
 
                     </div>
 
-                    <div class="price-item">
+                    <div class="goods-cards__item">
                         <img src="images/Group_1583-1.webp">
                         <h3>Перчатки Matrix Nitrile HighRisk</h3>
                         <p>Диагностические, неопудренные, нестерильные перчатки из нитрила повышенной прочности.</p>
@@ -139,7 +116,7 @@
 
                     </div>
 
-                    <div class="price-item">
+                    <div class="goods-cards__item">
                         <img src="images/Group_1584.webp">
                         <h3>Перчатки Matrix Premium Latex</h3>
                         <p>Диагностические, неопудренные, нестерильные перчатки из латекса с двойной хлоринацией.</p>
@@ -150,8 +127,10 @@
                         <a href="#" class="btm-black">Узнать стоимость</a>
 
                     </div>
+                </div>
 
-                    <div class="price-item">
+                <div class="goods-cards">
+                    <div class="goods-cards__item">
                         <img src="images/Group_1579-1.webp">
                         <h3>Перчатки Mercator Texident PF</h3>
                         <p>Диагностические, неопудренные, текстурированные, нестерильные перчатки из натурального
@@ -166,7 +145,7 @@
                     </div>
 
 
-                    <div class="price-item">
+                    <div class="goods-cards__item">
                         <img src="images/Group_1579-1.webp">
                         <h3>Перчатки Mercator Nitrylex PF</h3>
                         <p>Диагностические, неопудренные, нестерильные, нитриловые перчатки</p>
@@ -178,7 +157,7 @@
 
                     </div>
 
-                    <div class="price-item">
+                    <div class="goods-cards__item">
                         <img src="images/Group_1580.webp">
                         <h3>Перчатки Mercator Nitrylex PF Black</h3>
                         <p>Диагностические, неопудренные, нестерильные нитриловые перчатки</p>
@@ -189,8 +168,10 @@
                         <a href="#" class="btm-black">Узнать стоимость</a>
 
                     </div>
+                </div>
 
-                    <div class="price-item">
+                <div class="goods-cards">
+                    <div class="goods-cards__item">
                         <img src="images/Group_1581.webp">
                         <h3>Перчатки Mercator Nitrylex PF Collagen</h3>
                         <p>Диагностические, неопудренные, нестерильные нитриловые перчатки</p>
@@ -203,7 +184,7 @@
                     </div>
 
 
-                    <div class="price-item">
+                    <div class="goods-cards__item">
                         <img src="images/Group_1582.webp">
                         <h3>Перчатки Mercator Nitrylex PF Green</h3>
                         <p>Диагностические, неопудренные, нестерильные нитриловые перчатки</p>
@@ -215,7 +196,7 @@
 
                     </div>
 
-                    <div class="price-item">
+                    <div class="goods-cards__item">
                         <img src="images/Group_1583-2.webp">
                         <h3>Перчатки Vinil Armilla</h3>
                         <p>Диагностические, неопудренные, нестерильные перчатки из винила.</p>
@@ -226,8 +207,10 @@
                         <a href="#" class="btm-black">Узнать стоимость</a>
 
                     </div>
+                </div>
 
-                    <div class="price-item">
+                <div class="goods-cards">
+                    <div class="goods-cards__item">
                         <img src="images/Group_1546.webp">
                         <h3>Перчатки NitriМax Black</h3>
                         <p>Диагностические, неопудренные, нестерильные перчатки из нитрила</p>
@@ -240,7 +223,7 @@
                     </div>
 
 
-                    <div class="price-item">
+                    <div class="goods-cards__item">
                         <img src="images/Group_1547.webp">
                         <h3>Перчатки Nitrimax Blue</h3>
                         <p>Диагностические, неопудренные, нестерильные перчатки из нитрила</p>
@@ -252,7 +235,7 @@
 
                     </div>
 
-                    <div class="price-item">
+                    <div class="goods-cards__item">
                         <img src="images/Group_1549.webp">
                         <h3>Перчатки Nitrimax Red</h3>
                         <p>Диагностические, неопудренные, нестерильные перчатки из нитрила</p>
@@ -263,8 +246,10 @@
                         <a href="#" class="btm-black">Узнать стоимость</a>
 
                     </div>
+                </div>
 
-                    <div class="price-item">
+                <div class="goods-cards">
+                    <div class="goods-cards__item">
                         <img src="images/Group_1550.webp">
                         <h3>Перчатки Nitrimax Violet</h3>
                         <p>Диагностические, неопудренные, нестерильные перчатки из нитрила</p>
@@ -277,7 +262,7 @@
                     </div>
 
 
-                    <div class="price-item">
+                    <div class="goods-cards__item">
                         <img src="images/Group_1551.webp">
                         <h3>Перчатки Nitrimax Pink</h3>
                         <p>Диагностические, неопудренные, нестерильные перчатки из нитрила</p>
@@ -289,7 +274,7 @@
 
                     </div>
 
-                    <div class="price-item">
+                    <div class="goods-cards__item">
                         <img src="images/Group_1540.webp">
                         <h3>Перчатки DeMax</h3>
                         <p>Диагностические, неопудренные, нестерильные перчатки из натурального латекса</p>
@@ -304,8 +289,7 @@
                 </div>
 
             </div>
-
-        </div>
+        </section>
         <!--ПЕРЕЧЕНЬ ТОВАРОВ-->
 
         <!--ПРАЙС-ЛИСТ-->
@@ -342,9 +326,11 @@
                     <div class="section-recomendations-item">
                         <div class="recomendations-item">
                             <img src="images/i.webp">
-                            <h3>Система трансфузионная для переливания крови и кровезаменителей пк с пластиковым шипом
+                            <h3>Система трансфузионная для переливания крови и кровезаменителей пк с пластиковым
+                                шипом
                             </h3>
-                            <p>Предназначена для использования с трансфузионными пакетами и стеклянными флаконами</p>
+                            <p>Предназначена для использования с трансфузионными пакетами и стеклянными флаконами
+                            </p>
                             <a href="" class="btm-black">Узнать больше</a>
 
                         </div>
@@ -361,7 +347,8 @@
                         <div class="recomendations-item">
                             <img src="images/JS-Udlinitel-2ps_l.webp">
                             <h3>Шприцы медицинские</h3>
-                            <p>Малообъемные (0,3 , 0,5 и 1 мл), шприцы стандартного (2 , 5 , 10 , 20 , 30 мл) и большого
+                            <p>Малообъемные (0,3 , 0,5 и 1 мл), шприцы стандартного (2 , 5 , 10 , 20 , 30 мл) и
+                                большого
                                 объема (50 , 60 , 100 , 150 мл).
                             </p>
                             <a href="#" class="btm-black">Узнать больше</a>
@@ -385,27 +372,31 @@
                                     <span>Медиал-Мед</span> — официальный дистрибьютор медицинских перчаток в России
                                 </h2>
                                 <div class="section-company-about-info-l">
-                                    <p>Компания ООО «Медиал-Мед» занимается поставкой медицинских расходных материалов
+                                    <p>Компания ООО «Медиал-Мед» занимается поставкой медицинских расходных
+                                        материалов
                                         по
                                         всей
                                         России.</p>
 
                                     <p>Главными критериями, которых мы придерживаемся в нашей работе, являются
                                         честность,
-                                        профессионализм, мобильность, нацеленность на результат и постоянное развитие.
+                                        профессионализм, мобильность, нацеленность на результат и постоянное
+                                        развитие.
                                     </p>
 
                                     <p>Мы ценим каждого клиента и заботимся о каждом Вашем заказе.</p>
 
                                     <p>Обратившись к нам, Вы можете быть уверенными в приобретении качественных
                                         медицинских
-                                        расходных материалов на самых выгодных условиях. Наша команда готова ответить на
+                                        расходных материалов на самых выгодных условиях. Наша команда готова
+                                        ответить на
                                         все
                                         Ваши
                                         вопросы.</p>
                                 </div>
                                 <div class="section-company-about-info-r">
-                                    <p>Отличное знание рынка и производителей позволяет нам выбирать только самое лучшее
+                                    <p>Отличное знание рынка и производителей позволяет нам выбирать только самое
+                                        лучшее
                                         для наших клиентов, а также учитывать все нюансы во время работы.</p>
 
                                     <p>Каталог компании, который постоянно обновляется, представлен широким
@@ -426,7 +417,8 @@
                                     </div>
                                     <div class="service-item-1"></div>
                                     <h4>Минимальная сумма заказа — 20000₽</h4>
-                                    <p>Удобный порог для заказа каждого клиента. Все товары всегда в наличии на складе в
+                                    <p>Удобный порог для заказа каждого клиента. Все товары всегда в наличии на
+                                        складе в
                                         Санкт-Петербурге и Москве.</p>
                                 </div>
 
@@ -454,7 +446,8 @@
                                     </div>
                                     <div class="service-item-3"></div>
                                     <h4>Сертифицированные товары высокого качества</h4>
-                                    <p>Вся продукция имеет Регистрационные удостоверения и сертификаты, соответствует
+                                    <p>Вся продукция имеет Регистрационные удостоверения и сертификаты,
+                                        соответствует
                                         необходимым ГОСТам.</p>
                                 </div>
 
@@ -481,7 +474,8 @@
                                     </div>
                                     <div class="service-item-5"></div>
                                     <h4>Широкий ассортимент товаров в наличии</h4>
-                                    <p>Постоянно поддерживаем складские остатки, что позволяет оперативно удовлетворять
+                                    <p>Постоянно поддерживаем складские остатки, что позволяет оперативно
+                                        удовлетворять
                                         потребности клиентов.</p>
                                 </div>
 

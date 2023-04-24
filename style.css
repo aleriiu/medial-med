@@ -5,6 +5,13 @@
     padding: 0;
 }
 
+html,
+body,
+main,
+header {
+    width: 100%;
+}
+
 .content {
     width: 1140px;
     margin: 0 auto;
@@ -68,12 +75,6 @@ a.btm-black:hover {
 
 /* header */
 
-
-header,
-section {
-
-}
-
 .header-container {
     display: flex;
     justify-content: space-around;
@@ -82,8 +83,6 @@ section {
     /*?*/
     box-shadow: 0.063rem 0.063rem 0.438rem #00000060;
 }
-
-.header-logo {}
 
 .logo {
     width: 4.375rem;
@@ -147,10 +146,6 @@ section {
     position: relative;
 }
 
-.greeting-title {
-    
-}
-
 /* .greeting-line {
     background: url(images/Frame_1.svg);
     background-position: bottom;
@@ -210,8 +205,14 @@ section {
 .greeting-image {
     position: absolute;
     max-width: 100%;
-    left: 95%;
+    left: 61%;
     height: 100%;
+}
+
+.greeting-image__before::before {
+    position: absolute;
+    content: "";
+    z-index: 2;
 }
 
 /*
@@ -246,11 +247,40 @@ section {
 
 */
 
-/**STYLE PRODUCTS**/
+/* section goods */
 
-.section-price {}
+.goods-greetings {
+    display: flex;
+    justify-content: space-around;
+    padding: 7.5rem 0;
+}
 
-.section-price-item,
+.goods-greetings__header {
+    font-size: 3.125rem;
+    font-weight: 400;
+}
+
+.goods-cards {
+    display: flex;
+    gap: 1.938rem;
+    margin: 0 5.625rem;
+    margin-bottom: 1.875rem;
+}
+
+.goods-cards__item {
+    padding: 0.938rem;
+    background: #F0F1F1;
+    border-radius: 0.938rem;
+    
+}
+
+.goods-cards__item > img {
+    width: 18.75rem;
+    height: 12.625rem;
+}
+
+/*
+.goods-cards__item,
 .section-recomendations-item {
     display: flex;
     flex-direction: row;
@@ -259,16 +289,6 @@ section {
     flex-wrap: wrap;
 }
 
-
-
-.section-price-header {
-    font-size: 50px;
-    font-weight: 400;
-    margin: 0px;
-}
-
-/*****КНОПКА И ЗАГОЛОВОК НА РАЗНЫХ УРОВНЯХ*****/
-
 .section-price-btm {
     display: flex;
     flex-direction: row-reverse;
@@ -276,7 +296,7 @@ section {
     flex-wrap: nowrap;
 }
 
-.section-price-item .price-item,
+.goods-cards__item .goods-cards,
 .section-recomendations-item .recomendations-item {
     background: #F0F1F1;
     border-radius: 15px;
@@ -297,7 +317,7 @@ section {
 
 
 
-.section-price-item .price-item img {
+.goods-cards__item .goods-cards__item img {
     width: calc(100% + 30px);
     height: 250px;
     object-fit: cover;
@@ -305,6 +325,7 @@ section {
     border: 3px solid #F0F1F1;
     border-radius: 15px 15px 0px 0px;
 }
+*/
 
 /**STYLE PRODUCTS**/
 
