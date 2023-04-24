@@ -271,10 +271,10 @@ a.btm-black:hover {
     padding: 0.938rem;
     background: #F0F1F1;
     border-radius: 0.938rem;
-    
+
 }
 
-.goods-cards__item > img {
+.goods-cards__item>img {
     width: 18.75rem;
     height: 12.625rem;
 }
@@ -327,18 +327,15 @@ a.btm-black:hover {
 }
 */
 
-/**STYLE PRODUCTS**/
+/* section price */
 
-
-/**STYLE PRICE**/
-
-.section-pricelist {
+.price {
     position: relative;
     color: white;
     margin-top: 70px;
 }
 
-.section-pricelist .content {
+.price .price-container {
     background: rgb(92, 169, 158);
     background: linear-gradient(133deg, rgba(92, 169, 158, 1) 0%, rgba(122, 215, 202, 1) 100%);
     min-height: 550px;
@@ -346,7 +343,7 @@ a.btm-black:hover {
     position: relative;
 }
 
-.section-pricelist-bg1 {
+.price-bg {
     position: absolute;
     background: url(images/Vector_1.svg);
     top: 0;
@@ -357,7 +354,7 @@ a.btm-black:hover {
     background-repeat: no-repeat;
 }
 
-.section-pricelist-bg2 {
+.price-bg__block {
     position: absolute;
     background: url(images/iphone-x-line-button.webp);
     top: 0;
@@ -368,7 +365,7 @@ a.btm-black:hover {
     background-repeat: no-repeat;
 }
 
-.section-pricelist-1 {
+.price-list {
     width: 40%;
     display: flex;
     flex-direction: row;
@@ -381,37 +378,95 @@ a.btm-black:hover {
     height: 375px;
 }
 
-.section-pricelist-header {
+.price-list__header {
     font-size: 52px;
     line-height: 0.95;
     font-weight: 400;
     margin: 0px;
 }
 
-.section-pricelist-text {
+.price-list__description {
     width: 100%;
     padding-bottom: 20px;
     font-size: 15px;
     font-weight: 300;
 }
 
-.section-pricelist-btm {
+.price-list__btn {
     width: 100%;
 }
 
-/**STYLE PRICE**/
+/* section recommendation */
 
-/**STYLE PRODUCTS ESLE**/
-
-.section-recomendations-header1 {
-    font-size: 40px;
-    font-weight: 400;
-    margin: 0px;
+.recommendation-container {
+    margin: 0 5.625rem;
 }
 
-/**STYLE PRODUCTS ESLE**/
+.recommendation-header {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
 
-/**STYLE COMPANY**/
+.recommendation-cards {
+    display: flex;
+    gap: 1rem;
+    width: 18.75rem;
+}
+
+.recommendation-cards__item {
+    background: #F0F1F1;
+    border-radius: 0.938rem;
+}
+
+.recommendation-cards__item>img {
+    width: 18.75rem;
+    height: 13.021rem;
+}
+
+.recommendation-cards__item-header {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.recommendation-cards__item-description {
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+/* section company */
+
+.company-container {
+    display: flex;
+    gap: 3rem;
+    background: #F0F1F1;
+    margin: 6.25rem 5.625rem 17.813rem 5.625rem;
+}
+
+.company-info {
+    width: 30%;
+    font-size: 0.875rem;
+}
+
+.company-description {
+    width: 70%;
+}
+
+.company-description__header {
+    font-size: 2.188rem;
+    font-weight: 300;
+}
+
+.company-description__header>span {
+    color: #F0F1F1;
+    background: #60afa4;
+    border-radius: 0.313rem;
+}
+
+.company-description__info {
+    display: flex;
+}
+
+/*
 
 .section-company {
     background: rgb(242, 242, 242);
@@ -425,17 +480,7 @@ a.btm-black:hover {
     padding-bottom: 50px;
 }
 
-.section-company-bg1 {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    background: url(images/pixlr-bg-result.webp);
-    background-repeat: no-repeat;
-    background-position-y: 100%;
-    background-size: contain;
-    background-position-x: 60%;
-}
+
 
 .section-company-info {
     display: flex;
@@ -531,6 +576,40 @@ a.btm-black:hover {
     animation-delay: 1s;
 }
 
+*/
+
+/* section services */
+
+.services-container {
+    margin: 6.25rem 5.625rem 17.813rem 5.625rem;
+}
+
+.services-item {
+    display: flex;
+    gap: 3rem;
+}
+
+.services-item__block {
+    width: 22.499rem;
+    height: 19.034rem;
+    background: #F0F1F1;
+    border-radius: 0.938rem;
+    border: 0.125rem solid #eef2f5;
+}
+
+
+.services-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: url(images/pixlr-bg-result.webp);
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    background-size: contain;
+    background-position-x: 60%;
+}
+
 .oval-0 {
     z-index: -1;
     background: #F5F7F5;
@@ -575,16 +654,12 @@ a.btm-black:hover {
     background: url(images/fi-rr-user.svg)
 }
 
-/**STYLE COMPANY**/
+/* section map */
 
-/**STYLE MAP**/
-
-.section-map {
-    background-color: blue;
-    /********/
+.map {
+    background-color: #F0F1F1;
 }
 
-/**STYLE MAP**/
 
 /**STYLE CONTACTS**/
 
@@ -711,93 +786,3 @@ label {
 .inp::placeholder {
     color: #60afa4;
 }
-
-/**STYLE CONTACTS**/
-
-@media only screen and (max-width:820px) {
-    .content {
-        width: 100%;
-        margin: 0px auto;
-    }
-
-    .section-price-item .price-item,
-    .section-recomendations-item .recomendations-item {
-
-        width: calc((100% / 2) - 20px);
-
-    }
-
-
-}
-
-/********/
-
-@media only screen and (max-width:420px) {
-    .content {
-        width: 100%;
-        margin: 0px auto;
-    }
-
-    .section-price-item .price-item,
-    .section-recomendations-item .recomendations-item {
-
-        width: calc((100% / 1) - 20px);
-
-    }
-
-    .section-main-title {
-        font-size: 47px;
-        line-height: 0.95;
-        font-weight: 300;
-        margin: 8px;
-    }
-
-    .section-price-header {
-        font-size: 38px;
-        font-weight: 400;
-        margin: 15px;
-    }
-
-    .section-pricelist-bg2 {
-        background: none;
-    }
-
-    .section-pricelist-header {
-        font-size: 30px;
-        line-height: 0.95;
-        font-weight: 300;
-        margin: 0px;
-    }
-
-    .section-recomendations-header1 {
-        font-size: 40px;
-        font-weight: 300;
-        margin: 13px;
-    }
-
-    .about-header {
-        font-size: 35px;
-        font-weight: 300;
-        margin: -25px;
-        line-height: 54px;
-        margin-bottom: -30px;
-    }
-
-    .section-company-about-header {
-        display: none;
-    }
-
-    .section-company-service-item {
-        background: #ffffff;
-        border-radius: 15px;
-        /* width: calc((100% / 3) - 20px); */
-        margin-bottom: 30px;
-        min-height: 270px;
-        border: 2px #eef2f5 solid;
-        padding: 30px;
-        position: relative;
-        z-index: 2;
-    }
-}
-
-/********/
