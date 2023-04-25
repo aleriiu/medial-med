@@ -12,26 +12,9 @@ header {
     width: 100%;
 }
 
-.content {
-    width: 1140px;
+main,
+section {
     margin: 0 auto;
-}
-
-div .color {
-    width: 34px;
-    height: 34px;
-    border: 1px #949596 solid;
-    display: block;
-    border-radius: 50%;
-    margin-bottom: 40px;
-    padding: 3px;
-}
-
-div .color div {
-    width: 26px;
-    height: 26px;
-    border: 1px #EBE7E6 solid;
-    border-radius: 50%;
 }
 
 a.btm-white,
@@ -58,26 +41,11 @@ a.btm-white:hover {
     border: 2px #ffffff solid;
 }
 
-
-a.btm-black:link,
-a.btm-black:active,
-a.btm-black:visited {
-    background: #60afa4;
-    color: #ffffff;
-    border: 2px #60afa4 solid;
-}
-
-a.btm-black:hover {
-    background: #ffffff;
-    color: #60afa4;
-    border: 2px #60afa4 solid;
-}
-
 /* header */
 
 .header-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: sticky;
     /*?*/
@@ -146,26 +114,6 @@ a.btm-black:hover {
     position: relative;
 }
 
-/* .greeting-line {
-    background: url(images/Frame_1.svg);
-    background-position: bottom;
-    background-size: 70%;
-    height: 100vh;
-    background-position-x: right;
-    background-position-y: bottom;
-    background-repeat: no-repeat;
-} */
-/*
-.greeting-bg {
-    background: url(images/female-hands-disposa.png);
-    background-position: bottom;
-    background-size: 50%;
-    height: 100vh;
-    background-position-x: right;
-    background-position-y: bottom;
-    background-repeat: no-repeat;
-}*/
-
 .greeting-title__header {
     font-size: 4.188rem;
     line-height: 1;
@@ -187,17 +135,6 @@ a.btm-black:hover {
     list-style: none;
 }
 
-.item-list::before {
-    content: "";
-    width: 0.875rem;
-    height: 0.875rem;
-    background: #60afa4;
-    position: absolute;
-    border-radius: 50%;
-    bottom: 15%;
-    left: 9%;
-}
-
 .greeting-btn {
     margin-bottom: 7rem;
 }
@@ -205,47 +142,9 @@ a.btm-black:hover {
 .greeting-image {
     position: absolute;
     max-width: 100%;
-    left: 61%;
+    left: 84%;
     height: 100%;
 }
-
-.greeting-image__before::before {
-    position: absolute;
-    content: "";
-    z-index: 2;
-}
-
-/*
-.greeting-title__item{
-    width: 50%;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 55px;
-    font-size: 15px;
-} */
-
-/*
-.section-desc-r::before,
-.section-desc-l::before {
-    content: " ";
-    width: 14px;
-    height: 14px;
-    background: #60afa4;
-    position: absolute;
-    border-radius: 50%;
-    margin-left: -30px;
-    margin-top: 4px;
-}
-
-.section-desc-l::after {
-    content: " ";
-}
-
-.section-href {
-    width: 100%;
-}
-
-*/
 
 /* section goods */
 
@@ -263,6 +162,7 @@ a.btm-black:hover {
 .goods-cards {
     display: flex;
     gap: 1.938rem;
+    flex-wrap: wrap;
     margin: 0 5.625rem;
     margin-bottom: 1.875rem;
 }
@@ -271,6 +171,7 @@ a.btm-black:hover {
     padding: 0.938rem;
     background: #F0F1F1;
     border-radius: 0.938rem;
+    max-width: 30%;
 
 }
 
@@ -278,54 +179,6 @@ a.btm-black:hover {
     width: 18.75rem;
     height: 12.625rem;
 }
-
-/*
-.goods-cards__item,
-.section-recomendations-item {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.section-price-btm {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-}
-
-.goods-cards__item .goods-cards,
-.section-recomendations-item .recomendations-item {
-    background: #F0F1F1;
-    border-radius: 15px;
-    width: calc((100% / 3) - 20px);
-    margin-bottom: 30px;
-    min-height: 540px;
-    padding: 15px;
-}
-
-.recomendations-item img {
-    width: calc(100% + 30px);
-    height: 250px;
-    object-fit: cover;
-    margin: -15px 0px 0px -15px;
-    border: 3px solid #F0F1F1;
-    border-radius: 15px 15px 0px 0px;
-}
-
-
-
-.goods-cards__item .goods-cards__item img {
-    width: calc(100% + 30px);
-    height: 250px;
-    object-fit: cover;
-    margin: -15px 0px 0px -15px;
-    border: 3px solid #F0F1F1;
-    border-radius: 15px 15px 0px 0px;
-}
-*/
 
 /* section price */
 
@@ -466,122 +319,11 @@ a.btm-black:hover {
     display: flex;
 }
 
-/*
-
-.section-company {
-    background: rgb(242, 242, 242);
-    background: linear-gradient(180deg, rgba(242, 242, 242, 1) 0%, rgba(255, 255, 255, 1) 100%);
-    height: 200vh;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 50px;
-}
-
-
-
-.section-company-info {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 600px;
-    margin-bottom: 285px;
-    margin-top: 100px;
-}
-
-.company {
-    width: calc(100% / 3);
-    font-size: 14px;
-}
-
-.section-company-about-header {
-    width: calc(100% / 3 * 2);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.about-header {
-    font-size: 35px;
-    font-weight: 300;
-    margin: 0px;
-    line-height: 54px;
-    margin-bottom: -30px;
-}
-
-.about-header span {
-    background-color: #60afa4;
-    color: white;
-    border-radius: 5px;
-    padding-left: 7px;
-}
-
-.section-company-about-info-l {
-    width: calc(100% / 2);
-    font-size: 15px;
-    padding-right: 45px;
-}
-
-.section-company-about-info-r {
-    width: calc(100% / 2);
-    font-size: 15px;
-    padding-right: 45px;
-}
-
-.section-company-service {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.section-company-service-item {
-    background: #ffffff;
-    border-radius: 15px;
-    width: calc((100% / 3) - 20px);
-    margin-bottom: 30px;
-    min-height: 270px;
-    border: 2px #eef2f5 solid;
-    padding: 30px;
-    position: relative;
-    z-index: 2;
-}
-
-.service-item-1,
-.service-item-2,
-.service-item-3,
-.service-item-4,
-.service-item-5,
-.service-item-6 {
-    height: 50px;
-}
-
-
-.section-company-service-item div {
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 40px;
-    background-position-y: top;
-}
-
-.section-company-service-item:hover .oval-0 {
-    background: #8fd4ca60;
-    animation-delay: 1s;
-}
-
-.section-company-service-item:hover .oval-1 {
-    background: #73cdc060;
-    animation-delay: 1s;
-}
-
-*/
-
 /* section services */
 
 .services-container {
-    margin: 6.25rem 5.625rem 17.813rem 5.625rem;
+    margin-bottom: 17.813rem;
+    margin: 6, 25rem auto;
 }
 
 .services-item {
@@ -599,7 +341,6 @@ a.btm-black:hover {
 
 
 .services-bg {
-    position: absolute;
     top: 0;
     bottom: 0;
     width: 100%;
@@ -661,17 +402,18 @@ a.btm-black:hover {
 }
 
 
-/**STYLE CONTACTS**/
+/* footer */
 
-.section-contacts {
+.contact {
     background: rgb(92, 169, 158);
     background: linear-gradient(133deg, rgba(92, 169, 158, 1) 0%, rgba(122, 215, 202, 1) 100%);
-    position: relative;
-    height: 550px;
-    /*****/
 }
 
-.section-contacts-bg1 {
+.contact-container {
+    display: flex;
+}
+
+.contacts-bg {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -682,12 +424,7 @@ a.btm-black:hover {
 
 }
 
-.contact .content {
-    position: relative;
-    height: 750px;
-}
-
-.section-contacts-line {
+.contact-line {
     background: url(images/Vector_1.svg);
     top: 0;
     bottom: 0;
@@ -697,16 +434,9 @@ a.btm-black:hover {
     background-repeat: no-repeat;
 }
 
-.section-contacts-main {
-    width: 39%;
+.contact-info {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto 0;
-    height: 420px;
+    flex-direction: column;
 }
 
 .section-contacts-header {
@@ -722,6 +452,7 @@ a.btm-black:hover {
     font-weight: 300;
 }
 
+/*
 .contact-form {
     width: 81%;
     display: flex;
@@ -732,18 +463,17 @@ a.btm-black:hover {
     bottom: 0;
     margin: auto 0;
     left: 121%;
-    /* height: 100vh; */
+   
     background-color: #60afa470;
     border-radius: 18px;
     align-content: space-between;
-}
+} */
 
 .contact-img {
     background: url(images/Vector_3.svg);
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-start;
-    position: absolute;
     top: 0;
     bottom: 479px;
     margin: auto 0;
@@ -754,7 +484,6 @@ a.btm-black:hover {
 .contact-forma {
     background: #ffffff;
     border-radius: 20px;
-    position: absolute;
     top: 0;
     bottom: 0;
     margin: auto 0;
