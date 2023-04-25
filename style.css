@@ -8,40 +8,22 @@
 html,
 body,
 main,
-header {
+header,
+section {
     width: 100%;
 }
 
+header,
 main,
 section {
     margin: 0 auto;
 }
 
-a.btm-white,
-a.btm-black {
-    text-decoration: none;
-    display: inline-block;
-    /*  height: 40px; */
-    font-weight: 700;
-    padding: 16px 26px;
-    border-radius: 5px;
-}
-
-a.btm-white:link,
-a.btm-white:active,
-a.btm-white:visited {
-    background: #ffffff;
-    color: #60afa4;
-    border: 2px #60afa4 solid;
-}
-
-a.btm-white:hover {
-    background: #60afa4;
-    color: #ffffff;
-    border: 2px #ffffff solid;
-}
-
 /* header */
+
+.header {
+    background: #F0F1F1;
+}
 
 .header-container {
     display: flex;
@@ -50,33 +32,32 @@ a.btm-white:hover {
     position: sticky;
     /*?*/
     box-shadow: 0.063rem 0.063rem 0.438rem #00000060;
+    padding: 0 7.625rem;
 }
 
 .logo {
-    width: 4.375rem;
     height: 6.563rem;
-    margin: 0rem 5.625rem;
 }
 
 .menu {
     display: flex;
-    gap: 1.25rem;
 }
 
 .menu-item {
     list-style: none;
+    padding: 0 1.25rem;
 }
 
 .menu-link {
-    font-weight: 600;
-    font-size: 1rem;
+    font-weight: 500;
+    font-size: 0.875rem;
     text-decoration: none;
     color: #000000;
 }
 
 .menu-info {
     font-weight: 600;
-    font-size: 0.813rem;
+    font-size: 0.75rem;
 }
 
 .menu-line {
@@ -89,6 +70,7 @@ a.btm-white:hover {
     color: #60afa4;
     text-decoration: none;
     font-weight: 600;
+    font-size: 0.938rem;
 }
 
 .menu-btn {
@@ -96,8 +78,9 @@ a.btm-white:hover {
     background-color: #60afa4;
     color: #ffffff;
     border: 0.125rem solid #60afa4;
-    font-weight: 700;
+    font-weight: 600;
     border-radius: 0.313rem;
+    font-size: 0.875rem;
 }
 
 /* greeting */
@@ -109,13 +92,13 @@ a.btm-white:hover {
 
 .greeting-container {
     display: flex;
-    width: 70%;
-    padding: 0 5.625rem;
+    width: 60%;
+    padding: 0 7.625rem;
     position: relative;
 }
 
 .greeting-title__header {
-    font-size: 4.188rem;
+    font-size: 4.375rem;
     line-height: 1;
     font-weight: 400;
     padding-top: 5.625rem;
@@ -130,9 +113,11 @@ a.btm-white:hover {
 }
 
 .item-list {
-    color: #60afa4;
-    font-size: 0.938rem;
+    font-size: 1rem;
     list-style: none;
+    font-weight: 400;
+    line-height: 1.375rem;
+    padding: 0 1.875rem;
 }
 
 .greeting-btn {
@@ -142,7 +127,7 @@ a.btm-white:hover {
 .greeting-image {
     position: absolute;
     max-width: 100%;
-    left: 84%;
+    left: 89.5%;
     height: 100%;
 }
 
@@ -163,7 +148,6 @@ a.btm-white:hover {
     display: flex;
     gap: 1.938rem;
     flex-wrap: wrap;
-    margin: 0 5.625rem;
     margin-bottom: 1.875rem;
 }
 
@@ -172,11 +156,9 @@ a.btm-white:hover {
     background: #F0F1F1;
     border-radius: 0.938rem;
     max-width: 30%;
-
 }
 
 .goods-cards__item>img {
-    width: 18.75rem;
     height: 12.625rem;
 }
 
@@ -252,7 +234,7 @@ a.btm-white:hover {
 /* section recommendation */
 
 .recommendation-container {
-    margin: 0 5.625rem;
+   
 }
 
 .recommendation-header {
@@ -292,7 +274,8 @@ a.btm-white:hover {
     display: flex;
     gap: 3rem;
     background: #F0F1F1;
-    margin: 6.25rem 5.625rem 17.813rem 5.625rem;
+    margin-top: 6.25rem;
+    margin-bottom: 17.813rem;
 }
 
 .company-info {
@@ -323,7 +306,7 @@ a.btm-white:hover {
 
 .services-container {
     margin-bottom: 17.813rem;
-    margin: 6, 25rem auto;
+    margin-top: 6rem;
 }
 
 .services-item {
