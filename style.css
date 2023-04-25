@@ -19,6 +19,26 @@ section {
     margin: 0 auto;
 }
 
+.menu-btn {
+    padding: 1rem 1.625rem;
+    background-color: #60afa4;
+    color: #ffffff;
+    border: 0.125rem solid #60afa4;
+    font-weight: 600;
+    border-radius: 0.313rem;
+    font-size: 0.875rem;
+}
+
+.menu-btn__color {
+    padding: 1rem 1.625rem;
+    background-color: #ffffff;
+    color: #60afa4;
+    border: 0.125rem solid #60afa4;
+    font-weight: 600;
+    border-radius: 0.313rem;
+    font-size: 0.875rem;
+}
+
 /* header */
 
 .header {
@@ -73,16 +93,6 @@ section {
     font-size: 0.938rem;
 }
 
-.menu-btn {
-    padding: 1rem 1.625rem;
-    background-color: #60afa4;
-    color: #ffffff;
-    border: 0.125rem solid #60afa4;
-    font-weight: 600;
-    border-radius: 0.313rem;
-    font-size: 0.875rem;
-}
-
 /* greeting */
 
 .greeting {
@@ -133,22 +143,31 @@ section {
 
 /* section goods */
 
+.goods {
+    width: 100%;
+}
+
+.goods-container {
+    padding: 0 7.625rem;
+}
+
 .goods-greetings {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 7.5rem 0;
 }
 
 .goods-greetings__header {
-    font-size: 3.125rem;
+    font-size: 3.375rem;
     font-weight: 400;
 }
 
 .goods-cards {
     display: flex;
-    gap: 1.938rem;
-    flex-wrap: wrap;
+    gap: 2.938rem;
     margin-bottom: 1.875rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .goods-cards__item {
@@ -158,8 +177,87 @@ section {
     max-width: 30%;
 }
 
+.goods-cards__item-header {
+    padding: 0.938rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.goods-cards__item-description {
+    padding: 0.938rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.goods-cards__item-description__down {
+    padding-bottom: 2rem;
+}
+
+.goods-cards__item-color {
+    padding: 0.938rem 0.938rem 0.188rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.goods-cards__item-circle {
+    width: 2.125rem;
+    height: 2.125rem;
+    border: 0.063rem solid #949596;
+    border-radius: 50%;
+    padding: 0.188rem;
+    margin: 0 2.5rem 2.5rem 0.938rem;
+}
+
+.goods-cards__item-circle__inside {
+    width: 1.625rem;
+    height: 1.625rem;
+    border: 0.063rem #EBE7E6 solid;
+    border-radius: 50%;
+}
+
+
+.goods-cards__item-circle__inside_white {
+    background: #FFFFFC;
+}
+
+.goods-cards__item-circle__inside_purple {
+    background: #7C86B9;
+}
+
+.goods-cards__item-circle__inside_blue {
+    background: #2D60A5;
+}
+
+.goods-cards__item-circle__inside_grey {
+    background: #D0CAD8;
+}
+
+.goods-cards__item-circle__inside_red {
+    background: #DA3E2E;
+}
+
+.goods-cards__item-circle__inside_black {
+    background: #000000;
+}
+
+.goods-cards__item-circle__inside_green {
+    background: darkgreen;
+    
+}
+
+.goods-cards__item-circle__inside_pink {
+    background: #EBB8C9;
+}
+
 .goods-cards__item>img {
     height: 12.625rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.goods-cards__btn {
+   margin: 0 auto;
+   display: block;
 }
 
 /* section price */
@@ -233,9 +331,7 @@ section {
 
 /* section recommendation */
 
-.recommendation-container {
-   
-}
+.recommendation-container {}
 
 .recommendation-header {
     font-size: 2.5rem;
