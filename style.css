@@ -331,37 +331,60 @@ section {
 
 /* section recommendation */
 
-.recommendation-container {}
+.recommendation {
+    width: 100%;
+}
+
+.recommendation-container {
+    padding: 0 7.625rem;
+}
 
 .recommendation-header {
-    font-size: 2.5rem;
+    padding: 7.5rem 0 5rem 0;
+}
+
+.recommendation-header__cards {
+    font-size: 3.375rem;
     font-weight: 400;
 }
 
 .recommendation-cards {
     display: flex;
-    gap: 1rem;
-    width: 18.75rem;
+    gap: 2.938rem;
+    margin-bottom: 1.875rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .recommendation-cards__item {
     background: #F0F1F1;
     border-radius: 0.938rem;
+    padding: 0.938rem;
+    max-width: 30%;
 }
 
 .recommendation-cards__item>img {
     width: 18.75rem;
-    height: 13.021rem;
+    height: 12.625rem;
+    display: block;
+    margin: 0 auto;
 }
 
 .recommendation-cards__item-header {
     font-size: 1.125rem;
     font-weight: 600;
+    padding: 0.938rem;
 }
 
 .recommendation-cards__item-description {
     font-size: 0.875rem;
     font-weight: 400;
+    padding: 0.938rem;
+}
+
+.recommendation-cards__btn {
+    margin: 0 auto;
+    display: block;
 }
 
 /* section company */
