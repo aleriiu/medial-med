@@ -428,7 +428,7 @@
 
         <section class="section services">
             <div class="services-bg">
-           <!--    <img src="./images/pixlr-bg-result.webp" alt=""> --> 
+                <!--    <img src="./images/pixlr-bg-result.webp" alt=""> -->
 
                 <div class="services-container">
 
@@ -532,44 +532,32 @@
                         заказа.
                     </div>
                     <div class="contacts-center">
-                        <span>Телефон</span>
+                        <span>Телефон:</span>
                         <p>+7(812)999-99-99</p>
                     </div>
                     <div class="contacts-center">
-                        <span>Адрес</span>
+                        <span>Адрес:</span>
                         <p>194292, Г Санкт-Петербург, 9-Й Верхний переулок, д. 15 литера А</p>
                     </div>
-                    <div class="contact-form">
-                        <div class="contact-img">
-                            <img src="images/Vector_3.svg">
-                        </div>
+                    <div class="contact-img">
+                        <img src="images/Vector_3.svg">
                     </div>
                 </div>
-                <form class="contact-forma" action="send.php" method="POST">
-                    <label>
-                        Ваше имя <br>
-                        <input name="fio" class="inp" type="text" placeholder="Например, Валерия">
-                    </label>
-                    <label>
-                        <br>
-                        <br>Телефон<br>
-                        <input name="tel" class="inp" type="tel" placeholder="Например, +7(915)12345"><br>
-                    </label>
-                    <label>
-                        <br>E-mail<br>
-                        <input name="mail" class="inp" type="mail" placeholder="Например, info@rea.ru">
-                        <br>
-                        <br>
-                    </label>
-                    <label>
-                        <input type="submit"><br>
-                    </label>
-                    <label>
-                        <textarea name="form" class="inp" placeholder="Заполните форму, мы с вами свяжемся"></textarea>
-                        <br><br>
-                    </label>
-                    <input class="btm-submit" type="submit" value="Отправить"></input>
-                    <input class="btm-submit" type="reset"></input>
+                <form class="contact-form">
+
+                    <h2 class="contact-form__header"><span>Заполните форму</span>, мы с вами свяжемся</h2>
+
+                    <input name="name" class="contact-input" type="text" placeholder="Ваше имя">
+
+                    <input name="number" class="contact-input" type="number" placeholder="+7(915)1234567">
+
+                    <input name="mail" class="contact-input" type="mail" placeholder="Email">
+
+                    <input class="contact-checkbox" type="checkbox" id="checkbox" name="checkbox">Я соглашаюсь с <span
+                        class="contact-checkbox_color">политикой
+                        конфиденциальности</span>
+
+                    <button class="menu-btn contact-form__btn" type="seach">Запросить прайс-лист</button>
 
                 </form>
             </div>
