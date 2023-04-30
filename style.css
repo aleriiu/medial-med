@@ -163,6 +163,29 @@ section {
     padding: 0 1.875rem;
 }
 
+.item-list__circle::before {
+    content: " ";
+    width: 0.875rem;
+    height: 0.875rem;
+    background: #37aca0;
+    position: absolute;
+    border-radius: 50%;
+    left: 8rem;
+    bottom: 17.063rem;
+
+}
+
+.item-list__circle_two::before {
+    content: " ";
+    width: 0.875rem;
+    height: 0.875rem;
+    background: #37aca0;
+    position: absolute;
+    border-radius: 50%;
+    left: 27.5rem;
+    bottom: 17.063rem;
+}
+
 .greeting-btn {
     margin-bottom: 7rem;
 }
@@ -688,4 +711,8 @@ section {
 
 .contact-checkbox_color {
     color: #37aca0;
+}
+
+.contact-input:focus {
+    outline-color: #37aca0;
 }
