@@ -64,7 +64,6 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
     box-shadow: 0.063rem 0.063rem 0.438rem #00000060;
     padding: 0 7.625rem;
 }
@@ -148,11 +147,21 @@ section {
     margin-bottom: 7rem;
 }
 
-.greeting-image {
+.greeting-image__before {
+    background-image: url(./images/female-hands-disposa.png);
     position: absolute;
-    max-width: 100%;
-    left: 89.5%;
-    height: 100%;
+    width: 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 49.5rem;
+    background-position-x: right;
+    top: 2.438rem;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.greeting-image {
+    background-image: url(./images/Frame_1.svg);
 }
 
 /* section goods */
@@ -280,12 +289,11 @@ section {
 .price {
     position: relative;
     color: white;
-    margin-top: 70px;
+    margin-top: 4.375rem;
     padding: 0 7.625rem;
 }
 
 .price .price-container {
-    background: rgb(92, 169, 158);
     background: linear-gradient(133deg, rgba(92, 169, 158, 1) 0%, rgba(122, 215, 202, 1) 100%);
     min-height: 550px;
     border-radius: 15px;
@@ -470,7 +478,6 @@ section {
 
 .services-container {
     margin-bottom: 6.813rem;
-    ;
     margin-top: -27rem;
     padding: 0 7.625rem;
 }
@@ -515,7 +522,14 @@ section {
     top: 0rem;
     left: 0rem;
     border-radius: 0.938rem 0rem 12.5rem 0rem;
-    animation-delay: 1s;
+}
+
+.services-item__block:hover>.oval-0 {
+    background: #8fd4ca60;
+}
+
+.services-item__block:hover>.oval-0>.oval-1 {
+    background: #73cdc060;
 }
 
 .oval-1 {
@@ -523,10 +537,7 @@ section {
     height: 8.125rem;
     width: 8.125rem;
     border-radius: 0.938rem 0rem 8.125rem 0rem;
-    animation-delay: 1s;
 }
-
-
 
 /* section map */
 
@@ -583,7 +594,7 @@ section {
     font-weight: 400;
     margin: 0px;
     color: #ffffff;
-    padding: 7rem 0 3rem 0;
+    padding: 3rem 0 3rem 0;
 }
 
 .contacts-center {
@@ -606,7 +617,7 @@ section {
     flex-direction: row-reverse;
     justify-content: flex-start;
     position: absolute;
-    top: 4.25rem;
+    top: 2.8rem;
     right: 11.125rem;
 }
 
@@ -614,7 +625,6 @@ section {
 .contact-form {
     background: #ffffff;
     border-radius: 1.25rem;
-    height: 28.125rem;
     padding: 20px 20px;
     margin: 20px 0;
     width: 40%;
@@ -645,6 +655,11 @@ section {
 
 .contact-form__btn {
     margin-top: 1rem;
+}
+
+.contact-checkbox__block {
+    display: flex;
+    gap: 0.4rem;
 }
 
 .contact-checkbox {
