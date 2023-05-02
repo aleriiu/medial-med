@@ -140,6 +140,7 @@ section {
     position: relative;
 }
 
+
 .greeting-title__header {
     font-size: 4.375rem;
     line-height: 1;
@@ -715,4 +716,92 @@ section {
 
 .contact-input:focus {
     outline-color: #37aca0;
+}
+
+
+@media (min-width: 576px) and (max-width: 1199.98px) {
+   .header-container {
+    padding: 0 1.625rem;
+   }
+
+   .greeting-container {
+    padding: 0 1.625rem;
+    width: 100%;
+    overflow: hidden;
+   }
+
+   .greeting-title {
+    width: 60%;
+   }
+
+   .greeting-image__before {
+    width: 59%;
+    left: 37.5rem;
+    top: 4.438rem;
+   }
+
+   .item-list__circle::before {
+    left: 2rem;
+    bottom: 18.438rem;
+   }
+
+   .item-list__circle_two::before {
+    left: 20.5rem;
+    bottom: 18.438rem;
+   }
+
+   .goods-container {
+    padding: 0 1.625rem;
+   }
+
+   .price {
+    padding: 0 1.625rem;
+   }
+
+   .recommendation-container {
+    padding: 0 1.625rem;
+   }
+
+   .recommendation-cards__item>img {
+    max-width: 15.75rem;
+   }
+
+   .company-container {
+    padding: 0 1.625rem;
+   }
+
+   .company-info {
+    gap: 6rem;
+   }
+
+   .services-container {
+    margin-top: -46rem;
+    padding: 0 1.625rem;
+   }
+
+   .services-bg {
+    background-size: 85.5rem auto;
+   }
+
+   .services-item {
+    justify-content: space-evenly;
+   }
+
+   .contact-container {
+    padding: 0 1.625rem;
+   }
+
+   .contact-img {
+    top: 4.688rem;
+    right: 5.125rem;
+    max-height: 3.938rem;
+   }
+
+   .contact-input {
+    padding: 1.2rem 10.875rem 1.2rem 1rem;
+   }
+
+   .contact-checkbox__block {
+    flex-wrap: wrap;
+   }
 }
