@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/8f3d135e97.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8f3d135e97.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,8 +16,10 @@
     <header class="header">
         <div class="header-container">
             <div class="header-logo">
-              <a href="#"> <img class="logo" src="./images/logo.svg" alt=""> </a> 
+                <a href="#"> <img class="logo" src="./images/logo.svg" alt=""> </a>
             </div>
+            <input type="checkbox" id="burger">
+            <label for="burger"><i class="fa-solid fa-bars"></i></label>
             <div class="menu">
                 <p class="menu-item"><a class="menu-link" href="#catalog">Каталог</a></p>
                 <p class="menu-item"><a class="menu-link" href="#company">О компании</a></p>
@@ -25,7 +28,7 @@
             <div class="menu-info">ПН-ПТ: 9:00 - 18:00</div>
             <div class="menu-line"></div>
             <div class="menu-phone"><a class="phone" href="#">+7 (812) 988-99-09</a></div>
-            <button class="menu-btn" type="seach">Запросить прайс-лист</button>
+            <button class="menu-btn menu-btn_burger" type="seach">Запросить прайс-лист</button>
         </div>
     </header>
     <main>
@@ -35,8 +38,8 @@
                     <h1 class="greeting-title__header">Медицинские перчатки оптом от официального дистрибьютора
                     </h1>
                     <ul class="greeting-title__item">
-                        <li class="item-list item-list__circle">Оперативно доставим Ваш заказ в любой регион России</li>
-                        <li class="item-list item-list__circle_two">Широкий выбор товаров всех цветов и размеров в наличии</li>
+                        <li class="item-list">Оперативно доставим Ваш заказ в любой регион России</li>
+                        <li class="item-list">Широкий выбор товаров всех цветов и размеров в наличии</li>
                     </ul>
                     <button class="greeting-btn menu-btn" type="seach">Запросить прайс-лист</button>
                 </div>
@@ -295,19 +298,20 @@
 
         <section class="section price">
             <div class="price-container">
-                <div class="price-bg">
-                    <div class="price-bg__block">
-                        <div class="price-list">
-                            <h2 class="price-list__header">Запросите полный оптовый прайс-лист</h2>
-                            <div class="price-list__description"> Наш менеджер проконсультирует Вас по всем вопросам,
-                                поможет
-                                с
-                                выбором и
-                                оформлением заказа.
-                            </div>
-                            <button class="menu-btn__color" type="seach">Запросить прайс-лист</button>
+                <div class="price-bg"></div>
+                <div class="price-media">
+                    <div class="price-bg__block"></div>
+                    <div class="price-list">
+                        <h2 class="price-list__header">Запросите полный оптовый прайс-лист</h2>
+                        <div class="price-list__description"> Наш менеджер проконсультирует Вас по всем вопросам,
+                            поможет
+                            с
+                            выбором и
+                            оформлением заказа.
                         </div>
+                        <button class="menu-btn__color" type="seach">Запросить прайс-лист</button>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -540,12 +544,14 @@
                         <span>Адрес:</span>
                         <p>194292, Г Санкт-Петербург, 9-Й Верхний переулок, д. 15 литера А</p>
                     </div>
-                    <div class="contact-img">
-                        <img src="images/Vector_3.svg">
-                    </div>
+
                 </div>
 
                 <form class="contact-form">
+
+                    <div class="contact-img">
+                        <img src="images/Vector_3.svg">
+                    </div>
 
                     <h2 class="contact-form__header"><span>Заполните форму</span>, мы с вами свяжемся</h2>
 

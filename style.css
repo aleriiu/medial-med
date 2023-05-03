@@ -54,7 +54,7 @@ section {
 /* header */
 
 .header {
-    background: #F0F1F1;
+    background: #eef2f5;
     position: sticky;
     top: 0;
     z-index: 3;
@@ -126,10 +126,15 @@ section {
     color: #2b2b2b;
 }
 
+#burger,
+[for=burger] {
+    display: none;
+}
+
 /* greeting */
 
 .greeting {
-    background: #F0F1F1;
+    background: #eef2f5;
     width: 100%;
 }
 
@@ -158,33 +163,16 @@ section {
 
 .item-list {
     font-size: 1rem;
-    list-style: none;
     font-weight: 400;
     line-height: 1.375rem;
     padding: 0 1.875rem;
+    list-style: disc;
+    padding-left: 0;
 }
 
-.item-list__circle::before {
-    content: " ";
-    width: 0.875rem;
-    height: 0.875rem;
-    background: #37aca0;
-    position: absolute;
-    border-radius: 50%;
-    left: 8rem;
-    bottom: 17.063rem;
-
-}
-
-.item-list__circle_two::before {
-    content: " ";
-    width: 0.875rem;
-    height: 0.875rem;
-    background: #37aca0;
-    position: absolute;
-    border-radius: 50%;
-    left: 27.5rem;
-    bottom: 17.063rem;
+.item-list::marker {
+    color: #37aca0;
+    font-size: 2rem;
 }
 
 .greeting-btn {
@@ -418,7 +406,7 @@ section {
 }
 
 .recommendation-cards__item {
-    background: #F0F1F1;
+    background: #eef2f5;
     border-radius: 0.938rem;
     padding: 0.938rem;
     max-width: 30%;
@@ -451,7 +439,7 @@ section {
 /* section company */
 
 .company {
-    background: #F0F1F1;
+    background: #eef2f5;
     width: 100%;
 }
 
@@ -480,7 +468,7 @@ section {
 }
 
 .company-description__header>span {
-    color: #F0F1F1;
+    color: #eef2f5;
     background: #37aca0;
     border-radius: 0.313rem;
 }
@@ -583,7 +571,7 @@ section {
 /* section map */
 
 .map {
-    background-color: #F0F1F1;
+    background-color: #eef2f5;
 }
 
 
@@ -655,12 +643,9 @@ section {
 }
 
 .contact-img {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
     position: absolute;
-    top: 2.8rem;
-    right: 11.125rem;
+    top: -17px;
+    right: 34px;
 }
 
 
@@ -670,6 +655,10 @@ section {
     padding: 20px 20px;
     margin: 20px 0;
     width: 40%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact-input {
@@ -719,89 +708,230 @@ section {
 }
 
 
-@media (min-width: 576px) and (max-width: 1199.98px) {
-   .header-container {
-    padding: 0 1.625rem;
-   }
+@media (min-width: 1024px) and (max-width: 1439px) {
 
-   .greeting-container {
-    padding: 0 1.625rem;
-    width: 100%;
-    overflow: hidden;
-   }
+    .header-container {
+        padding: 0 1.625rem;
+    }
 
-   .greeting-title {
-    width: 60%;
-   }
+    .greeting-container {
+        padding: 0 1.625rem;
+        width: 100%;
+        overflow: hidden;
+    }
 
-   .greeting-image__before {
-    width: 59%;
-    left: 37.5rem;
-    top: 4.438rem;
-   }
+    .greeting-title {
+        max-width: 60%;
+        z-index: 1;
+    }
 
-   .item-list__circle::before {
-    left: 2rem;
-    bottom: 18.438rem;
-   }
+    .greeting-image__before {
+        max-width: 59%;
+        left: 37.5rem;
+        top: 4.438rem;
+    }
 
-   .item-list__circle_two::before {
-    left: 20.5rem;
-    bottom: 18.438rem;
-   }
+    .item-list {
+        margin-left: 1.625rem;
+    }
 
-   .goods-container {
-    padding: 0 1.625rem;
-   }
+    .goods-container {
+        padding: 0 1.625rem;
+    }
 
-   .price {
-    padding: 0 1.625rem;
-   }
+    .price {
+        padding: 0 1.625rem;
+    }
 
-   .recommendation-container {
-    padding: 0 1.625rem;
-   }
+    .recommendation-container {
+        padding: 0 1.625rem;
+    }
 
-   .recommendation-cards__item>img {
-    max-width: 15.75rem;
-   }
+    .recommendation-cards__item>img {
+        max-width: 15.75rem;
+    }
 
-   .company-container {
-    padding: 0 1.625rem;
-   }
+    .company-container {
+        padding: 0 1.625rem;
+    }
 
-   .company-info {
-    gap: 6rem;
-   }
+    .company-info {
+        gap: 6rem;
+    }
 
-   .services-container {
-    margin-top: -46rem;
-    padding: 0 1.625rem;
-   }
+    .services-container {
+        margin-top: -46rem;
+        padding: 0 1.625rem;
+    }
 
-   .services-bg {
-    background-size: 85.5rem auto;
-   }
+    .services-bg {
+        background-size: 85.5rem auto;
+    }
 
-   .services-item {
-    justify-content: space-evenly;
-   }
+    .services-item {
+        justify-content: space-evenly;
+    }
 
-   .contact-container {
-    padding: 0 1.625rem;
-   }
+    .contact-container {
+        padding: 0 1.625rem;
+    }
 
-   .contact-img {
-    top: 4.688rem;
-    right: 5.125rem;
-    max-height: 3.938rem;
-   }
+    .contact-form {
+        width: inherit;
+    }
 
-   .contact-input {
-    padding: 1.2rem 10.875rem 1.2rem 1rem;
-   }
+    .contact-img {
+        top: -17px;
+        right: 17px;
+        max-height: 3.938rem;
+    }
 
-   .contact-checkbox__block {
-    flex-wrap: wrap;
-   }
+    .contact-checkbox__block {
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    [for=burger] {
+        display: block;
+    }
+
+    .header-container {
+        padding: 0px 3.625rem;
+    }
+
+    .menu,
+    .menu-info,
+    .menu-line {
+        display: none;
+    }
+
+    .fa-solid {
+        font-size: 44px;
+        color: #37aca0;
+    }
+
+    #burger:checked+label+div {
+        display: block;
+    }
+
+    .greeting-container {
+        padding: 0 1.625rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: inherit;
+    }
+
+    .item-list {
+        margin-left: 1rem;
+    }
+
+    .greeting-image__before {
+        display: none;
+    }
+
+    .goods-container {
+        padding: 0px 3.625rem;
+    }
+
+    .goods-greetings {
+        padding: 3.5rem 0;
+    }
+
+    .goods-greetings__header {
+        font-size: 2rem;
+    }
+
+    .goods-cards__item {
+        max-width: 46%;
+    }
+
+    .price {
+        padding: 0px 3.625rem;
+    }
+
+    .price-bg {
+        display: none;
+    }
+
+    .price-list {
+        position: absolute;
+        z-index: 1;
+        width: 67%;
+        padding: 4rem 0rem 0rem 2rem;
+    }
+
+    .price-bg__block {
+        background-position-x: 105%;
+    }
+
+    .recommendation-container {
+        padding: 0px 3.625rem;
+    }
+
+    .recommendation-header {
+        padding: 3.5rem 0;
+    }
+
+    .recommendation-header__cards {
+        font-size: 2rem;
+    }
+
+    .recommendation-cards__item {
+        max-width: 46%;
+    }
+
+    .recommendation-cards__item > img {
+        width: 16.75rem;
+    }
+
+    .company-container {
+        padding: 0px 3.625rem;
+    }
+
+    .company-info {
+        flex-direction: column;
+        gap: 4rem;
+        padding-top: 3.25rem;
+    }
+
+    .company-info__about {
+        margin-left: 1rem;
+    }
+
+    .company-description__header {
+        font-size: 2.625rem;
+    }
+
+    .services-container {
+        margin-top: -54rem;
+        padding: 0px 3.625rem;
+    }
+
+    .services-bg {
+        background-size: 64.5rem auto;
+    }
+
+    .services-item {
+        padding-top: 74.5rem;
+        justify-content: space-between;
+    }
+
+    .services-item__block {
+        width: 19.499rem;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        padding: 0px 3.625rem;
+    }
+
+    .contact-info {
+        width: inherit;
+    }
+
+    .contact-form {
+        width: inherit;
+    }
 }
