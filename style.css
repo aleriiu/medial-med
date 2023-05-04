@@ -1095,7 +1095,7 @@ section {
     }
 
     .services-bg {
-        background-size: 30.5rem auto;
+        background: none
     }
 
     .services-item {
