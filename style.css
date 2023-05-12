@@ -1034,7 +1034,6 @@ section {
         position: absolute;
         z-index: 1;
         width: 100%;
-
         padding: 2rem 0rem 0rem 1rem;
     }
 
@@ -1058,12 +1057,23 @@ section {
         font-size: 1.5rem;
     }
 
+    .recommendation-cards {
+        justify-content: unset;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        gap: 0.938rem;
+    }
+
     .recommendation-cards__item {
         max-width: 100%;
     }
 
     .recommendation-cards__item>img {
         width: 16.75rem;
+    }
+
+    .recommendation-cards__item-description {
+        padding: 0 0.938rem 0.938rem 0.938rem;
     }
 
     .company-container {
@@ -1099,11 +1109,15 @@ section {
     }
 
     .services-item {
-        justify-content: space-around;
+        flex-wrap: nowrap;
+        justify-content: unset;
+        overflow-x: scroll;
+        gap: 1rem;
     }
 
     .services-item__block {
         width: 19.499rem;
+        flex-shrink: 0;
     }
 
     .contact-container {
